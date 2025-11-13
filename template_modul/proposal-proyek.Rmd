@@ -93,6 +93,29 @@ knitr::opts_chunk$set(echo = TRUE)
   
   6. Deployment
   Tahap Deployment merupakan langkah penerapan hasil analisis ke dalam lingkungan bisnis agar dapat dimanfaatkan untuk pengambilan keputusan. Hasil dari data mining perlu disajikan dalam bentuk yang mudah dipahami dan aplikatif bagi pengguna akhir (Wirth & Hipp, 2000). Pada tahap ini, hasil segmentasi pelanggan dapat diimplementasikan ke dalam sistem manajemen pelanggan atau digunakan oleh tim pemasaran untuk menyusun strategi promosi yang lebih efektif. Selain itu, tahap ini juga dapat mencakup pembuatan dashboard visualisasi hasil segmentasi agar informasi lebih mudah dipahami oleh pengambil keputusan.
+  
+## 3.2 Teknik dan Algoritma yang Digunakan
+
+  Dalam penelitian ini akan digunakan beberapa teknik dan algoritma utama, yaitu algoritma K‑Means Clustering sebagai metode mayor (modeling) serta beberapa fungsi minor (preprocessing) untuk menyiapkan data. Berikut rincian teknisnya:
+  
+  1. 
+
+## 3.3 Rencana Implementasi
+
+  Pada tahap implementasi, penelitian ini akan dilakukan dengan menggunakan bahasa pemrograman R sebagai alat analisis utama karena memiliki kemampuan komputasi statistik yang kuat dan mendukung berbagai paket untuk data mining serta machine learning. R dipilih karena bersifat open source, memiliki dokumentasi yang luas, serta menyediakan berbagai pustaka khusus untuk analisis klaster seperti stats, cluster, dan factoextra. Adapun RStudio digunakan sebagai lingkungan pengembangan terintegrasi (Integrated Development Environment / IDE) yang memudahkan dalam melakukan penulisan kode, visualisasi hasil, serta pengelolaan proyek penelitian secara terstruktur.
+
+# BAB 4 : Penutup
+
+## 4.1 Hasil dan Dampak
+
+  Hasil yang diharapkan dari proyek ini adalah terbentuknya model segmentasi pelanggan menggunakan algoritma K-Means yang mampu mengelompokkan pelanggan e-commerce berdasarkan pola pembelian mereka. Model ini diharapkan dapat menghasilkan beberapa kelompok pelanggan (cluster) yang memiliki karakteristik berbeda, seperti frekuensi pembelian, total transaksi, serta jenis produk yang sering dibeli.
+
+  Selain model clustering, proyek ini juga akan menghasilkan visualisasi hasil analisis dalam bentuk grafik, tabel, dan diagram klaster yang menampilkan distribusi pelanggan di setiap segmen. Visualisasi ini dibuat menggunakan RStudio agar hasilnya mudah dipahami dan dapat dijadikan dasar pengambilan keputusan oleh pihak bisnis.
+
+  Melalui hasil analisis ini, diharapkan dapat diperoleh insight atau rekomendasi berbasis data, seperti strategi promosi yang lebih tepat sasaran, pengelolaan pelanggan setia, serta peningkatan efektivitas kampanye pemasaran. Dengan demikian, hasil proyek ini berpotensi memberikan dampak nyata dalam meningkatkan efisiensi operasional dan mendukung pengambilan keputusan berbasis data (data-driven decision making) pada platform e-commerce.
+
+  Lebih jauh lagi, penerapan model ini dapat membantu perusahaan dalam mengoptimalkan strategi bisnis dan pemasaran, misalnya dengan memberikan promo khusus untuk pelanggan potensial atau memperbaiki strategi retensi pelanggan yang kurang aktif. Dengan dukungan sistem segmentasi pelanggan yang akurat, perusahaan dapat meningkatkan kepuasan pelanggan sekaligus memperkuat daya saingnya di pasar digital.
+
 
 \nocite{*}
    

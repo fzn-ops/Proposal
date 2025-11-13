@@ -70,7 +70,29 @@ knitr::opts_chunk$set(echo = TRUE)
   9. RATE – harga satuan produk.
   10. GROSS AMT – total nilai penjualan kotor per transaksi.
   Dari segi kualitas, dataset ini tergolong cukup baik dan terstruktur, dengan kolom yang jelas serta konsisten antarbaris. Namun, karena berasal dari sumber publik, terdapat potensi inkonsistensi format tanggal, nilai kosong (missing value), atau duplikasi data, sehingga perlu dilakukan tahap pembersihan data (data cleaning) sebelum digunakan dalam analisis lebih lanjut.
+  
+# BAB 3 : Metodologi Penelitian
 
+## 3.1 Metodologi Data Mining
+  Model CRISP-DM (Cross Industry Standard Process for Data Mining) merupakan kerangka kerja yang umum digunakan dalam pelaksanaan proyek data mining karena menyediakan alur kerja yang sistematis dan terstruktur. Model ini dikembangkan oleh konsorsium industri Eropa pada akhir tahun 1990-an sebagai standar proses yang dapat diterapkan di berbagai bidang, baik akademik maupun industri. CRISP-DM terdiri dari enam tahapan utama yang saling berkaitan, dimulai dari pemahaman terhadap tujuan bisnis hingga penerapan hasil analisis ke dalam konteks operasional. Setiap tahap dalam model ini bersifat iteratif, sehingga peneliti dapat kembali ke tahap sebelumnya apabila hasil yang diperoleh belum sesuai dengan tujuan yang diharapkan (Wirth & Hipp, 2000).
+  
+  1. Business Understanding
+    Tahap Business Understanding berfokus pada pemahaman tujuan dan kebutuhan bisnis, kemudian menerjemahkannya menjadi permasalahan data mining yang dapat diselesaikan dengan teknik analisis data. Pada tahap ini, peneliti perlu menentukan arah dan sasaran analisis yang akan dilakukan (Wirth & Hipp, 2000). Dalam proyek ini, tujuan bisnis yang diangkat adalah untuk memahami pola pembelian pelanggan pada platform e-commerce agar perusahaan dapat melakukan segmentasi pelanggan secara lebih efektif. Peneliti mengidentifikasi bahwa perbedaan perilaku pembelian seperti jumlah unit yang dibeli, total pendapatan, serta jenis produk yang dibeli dapat dijadikan dasar dalam membentuk kelompok pelanggan. Oleh karena itu, penelitian ini bertujuan untuk membuat model segmentasi pelanggan menggunakan algoritma K-Means Clustering yang dapat mengelompokkan pelanggan berdasarkan kesamaan karakteristik transaksi mereka.
+
+  2. Data Understanding
+  Tahap Data Understanding bertujuan untuk mengenal data yang akan digunakan melalui proses pengumpulan, eksplorasi, dan evaluasi kualitas data agar peneliti memahami struktur dan karakteristiknya (Wirth & Hipp, 2000). Pada penelitian ini dilakukan analisis awal terhadap data transaksi pelanggan e-commerce untuk memahami distribusi nilai pembelian, frekuensi transaksi, dan waktu pembelian. Selain itu, dilakukan juga pemeriksaan terhadap missing value, outlier, serta pola umum yang mungkin muncul dari data tersebut.
+
+  3. Data Preparation
+  Tahap Data Preparation mencakup kegiatan pembersihan dan transformasi data agar siap digunakan dalam tahap pemodelan. Proses ini meliputi pemilihan atribut, penanganan data hilang, transformasi nilai, serta pembuatan dataset akhir yang sesuai dengan kebutuhan analisis (Wirth & Hipp, 2000). Langkah-langkah yang dilakukan meliputi pembersihan data (data cleaning), transformasi variabel, dan normalisasi agar skala setiap atribut seragam. Dalam penelitian segmentasi pelanggan, variabel seperti Recency, Frequency, dan Monetary biasanya diolah menjadi dataset baru yang merepresentasikan perilaku pembelian pelanggan. Data yang telah dipersiapkan dengan baik akan meningkatkan akurasi dan efisiensi pada tahap pemodelan berikutnya.
+  
+  4. Modeling
+  Tahap Modeling merupakan proses penerapan metode analisis untuk membangun model yang dapat menemukan pola dalam data. Dalam tahap ini, peneliti memilih metode yang sesuai dengan jenis permasalahan serta menyesuaikan parameter model untuk memperoleh hasil terbaik (Wirth & Hipp, 2000). Dalam penelitian ini digunakan algoritma K-Means clustering untuk mengelompokkan pelanggan berdasarkan pola pembelian mereka. Sebelum pemodelan, dilakukan penentuan jumlah cluster yang optimal menggunakan metode seperti Elbow Method atau Silhouette Coefficient. Setelah model dijalankan, hasil pengelompokan dianalisis untuk mengetahui karakteristik setiap segmen pelanggan, seperti pelanggan loyal, pelanggan baru, atau pelanggan dengan frekuensi pembelian rendah.
+
+  5. Evaluation
+  Tahap Evaluation berfungsi untuk menilai sejauh mana model yang dihasilkan telah memenuhi tujuan bisnis dan memberikan hasil yang akurat serta bermakna. Evaluasi dilakukan dengan meninjau ulang seluruh tahapan untuk memastikan hasil model sesuai dengan sasaran awal (Wirth & Hipp, 2000). Evaluasi dilakukan dari dua sisi, yaitu teknis dan bisnis. Secara teknis, penilaian dapat dilakukan dengan melihat nilai Silhouette Score atau kesesuaian cluster yang terbentuk. Secara bisnis, hasil dievaluasi berdasarkan sejauh mana segmentasi yang dihasilkan dapat membantu pengambilan keputusan pemasaran, seperti strategi promosi yang lebih tepat sasaran.
+  
+  6. Deployment
+  Tahap Deployment merupakan langkah penerapan hasil analisis ke dalam lingkungan bisnis agar dapat dimanfaatkan untuk pengambilan keputusan. Hasil dari data mining perlu disajikan dalam bentuk yang mudah dipahami dan aplikatif bagi pengguna akhir (Wirth & Hipp, 2000). Pada tahap ini, hasil segmentasi pelanggan dapat diimplementasikan ke dalam sistem manajemen pelanggan atau digunakan oleh tim pemasaran untuk menyusun strategi promosi yang lebih efektif. Selain itu, tahap ini juga dapat mencakup pembuatan dashboard visualisasi hasil segmentasi agar informasi lebih mudah dipahami oleh pengambil keputusan.
 
 \nocite{*}
    

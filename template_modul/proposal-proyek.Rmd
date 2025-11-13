@@ -1,0 +1,76 @@
+---
+title: \large\bfseries{Template Modul}
+author: "Muhammad Faris Suryadani | Fauzan Fuadiansyah | Muhamad Mauladi Fadillah"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    citation_package: natbib
+    template: bwHandout.tex
+    includes:
+       in_header: preamble.tex
+    keep_tex: false
+    toc: true
+    toc_depth: 3
+    number_sections: true
+    latex_engine: xelatex
+#lot: true
+lof: true    
+fontsize: 11pt
+geometry: margin=1in
+
+bibliography: references.bib
+#nocite: | 
+#  @*
+
+my_subtitle: "(Proposal)"
+fancy: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=6.5cm]{gambar/vokasi6.png}
+\end{figure}
+
+\addtocounter{section}{0}
+\setcounter{page}{1}
+
+\newpage
+
+# BAB 1: PENDAHULUAN
+
+## 1.1 Latar Belakang
+
+## 1.2 Rumusan Masalah
+  1. Bagaimana mengidentifikasi pola pembelian pelanggan e-commerce berdasarkan data transaksi historis?
+  2. Bagaimana menerapkan algoritma K-Means untuk melakukan segmentasi pelanggan berdasarkan pola pembelian mereka?
+  3. Apa karakteristik dan profil dari setiap segmen pelanggan yang dihasilkan dari proses clustering?
+
+## 1.3 Tujuan Penelitian
+  1. Menganalisis dan mengidentifikasi pola pembelian pelanggan e-commerce berdasarkan data transaksi yang tersedia.
+  2. Mengimplementasikan algoritma K-Means untuk melakukan segmentasi pelanggan berdasarkan pola pembelian mereka dengan menggunakan fitur-fitur seperti recency, frequency, dan monetary (RFM).
+  3. Menganalisis dan mendeskripsikan karakteristik setiap segmen pelanggan yang dihasilkan, termasuk profil perilaku pembelian dan nilai pelanggan.
+
+# BAB 2 : Data
+
+## 2.1 Sumber Data
+
+  Data yang digunakan dalam penelitian ini berasal dari platform Kaggle, dengan judul International Sale Report. Dataset ini merupakan data publik yang berisi catatan transaksi penjualan internasional, mencakup informasi pelanggan, produk, ukuran, harga satuan, dan nilai penjualan secara keseluruhan. Data ini bersifat sekunder, karena diperoleh dari sumber terbuka dan bukan hasil pengumpulan langsung oleh peneliti. Dataset ini terdiri dari 37.432 baris data dan 10 variabel, yaitu:
+  1. index – nomor urut data.
+  2. DATE – tanggal terjadinya transaksi penjualan.
+  3. Months – periode bulan dan tahun transaksi.
+  4. CUSTOMER – nama pelanggan yang melakukan pembelian.
+  5. Style – kode gaya atau model produk yang dijual.
+  6. SKU – kode stok barang unik yang mewakili kombinasi produk.
+  7. Size – ukuran produk yang dibeli (misalnya L, XL, XXL)
+  8. PCS – jumlah unit barang yang terjual dalam satu transaksi.
+  9. RATE – harga satuan produk.
+  10. GROSS AMT – total nilai penjualan kotor per transaksi.
+  Dari segi kualitas, dataset ini tergolong cukup baik dan terstruktur, dengan kolom yang jelas serta konsisten antarbaris. Namun, karena berasal dari sumber publik, terdapat potensi inkonsistensi format tanggal, nilai kosong (missing value), atau duplikasi data, sehingga perlu dilakukan tahap pembersihan data (data cleaning) sebelum digunakan dalam analisis lebih lanjut.
+
+
+\nocite{*}
+   
